@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap');
+:root { --cyber-ink:#20263b; --cyber-paper:#f7f4ee; --cyber-panel:#fffdf8; --cyber-lilac:#e9e1ff; --cyber-mint:#bcefdc; --cyber-pink:#f5b7d7; --cyber-sky:#a9def0; --cyber-yellow:#f6d982; --cyber-line:#d9d5d1; --cyber-muted:#737487; }
+* { box-sizing:border-box; }
+.cyber-shell { font-family:'Outfit',sans-serif; background:var(--cyber-paper); color:var(--cyber-ink); min-height:100vh; }
+.cyber-shell .mono { font-family:'DM Mono',monospace; }
+.cyber-shell button,.cyber-shell input { font:inherit; transition:transform .18s ease,background-color .18s ease,color .18s ease,border-color .18s ease; }
+.cyber-shell button:active { transform:translateY(1px); }
+.cyber-shell button:hover { border-color:var(--cyber-ink); }
+.cyber-noise:after { content:""; position:fixed; inset:0; pointer-events:none; opacity:.025; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }

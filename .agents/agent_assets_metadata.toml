@@ -1,0 +1,30 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "8V3WFyp2aDOD8lJOP7deF"
+uri = "file://research/notes.md"
+type = "text"
+title = "Research Notes: Multi-Agent Operating System Patterns"
+description = "A running research plan for orchestration, workforces, skills, projects, and Obsidian memory patterns."
+logical_id = "de24aab2-f171-4d5d-baf2-d334e8bbf416"
+content_hash = "sha256:9f232e32588ac2c73ef31aa3a7db54c9dea55cb3dc894de65516da08ad6bfca6"
+size = 1728
+mtime_ms = 1787515318982
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:17eca46c-44d7-42ad-bfee-3d52769eee7a/de24aab2-f171-4d5d-baf2-d334e8bbf416/2e7536ec-6526-4e13-8dff-974170461828"
+storage_version_token = "1787515332914424"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "IEEMVrcz_FpBFNebKCs0q"
+uri = "file://research/multi-agent-os-patterns.md"
+type = "text"
+title = "Multi-Agent OS Open-Source Patterns"
+description = "A research-backed shortlist for chief-agent orchestration, workforces, skills, project boundaries, and Obsidian memory."
+logical_id = "597cad20-d47a-46b2-b10f-99c96483417c"
+content_hash = "sha256:48caa5405ad7ce91f384a2acd5eb5dc38ecd787af4846560e304b814bc743b05"
+size = 5686
+mtime_ms = 1787515477210
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:17eca46c-44d7-42ad-bfee-3d52769eee7a/597cad20-d47a-46b2-b10f-99c96483417c/2044001f-f227-48fe-84e4-1a1582261c29"
+storage_version_token = "1787515487515729"
+content_type = "text/markdown"

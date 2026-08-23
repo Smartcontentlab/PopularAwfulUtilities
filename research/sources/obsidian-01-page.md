@@ -1,0 +1,388 @@
+Source: https://github.com/itechmeat/open-second-brain
+Title: GitHub - itechmeat/open-second-brain: Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections into confirmed preferences with measurable confidence. Adapters ship for Claude Code, Codex, and OpenClaw, with an MCP server for anything else. · GitHub
+Fetched: 2026-08-23T20:02:32.948Z
+
+[Skip to content](https://github.com/itechmeat/open-second-brain#start-of-content)
+
+You signed in with another tab or window. [Reload](https://github.com/itechmeat/open-second-brain) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/itechmeat/open-second-brain) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/itechmeat/open-second-brain) to refresh your session.Dismiss alert
+
+{{ message }}
+
+[itechmeat](https://github.com/itechmeat)/ **[open-second-brain](https://github.com/itechmeat/open-second-brain)** Public
+
+- [Notifications](https://github.com/login?return_to=%2Fitechmeat%2Fopen-second-brain) You must be signed in to change notification settings
+- [Fork\\
+40](https://github.com/login?return_to=%2Fitechmeat%2Fopen-second-brain)
+- [Star\\
+319](https://github.com/login?return_to=%2Fitechmeat%2Fopen-second-brain)
+
+
+main
+
+[**42** Branches](https://github.com/itechmeat/open-second-brain/branches) [**137** Tags](https://github.com/itechmeat/open-second-brain/tags)
+
+[Go to Branches page](https://github.com/itechmeat/open-second-brain/branches)[Go to Tags page](https://github.com/itechmeat/open-second-brain/tags)
+
+Go to file
+
+Code
+
+Open more actions menu
+
+## Latest commit
+
+![solaitken](https://avatars.githubusercontent.com/u/271202062?v=4&size=40)![claude](https://avatars.githubusercontent.com/u/81847?v=4&size=40)![itechmeat](https://avatars.githubusercontent.com/u/42838667?v=4&size=40)
+3 people
+
+[feat: what earns its keep (v1.51.0) (](https://github.com/itechmeat/open-second-brain/commit/6d3e8b23b2d04726c2ae1dcdc7c9160e0a792a2f) [#177](https://github.com/itechmeat/open-second-brain/pull/177) [)](https://github.com/itechmeat/open-second-brain/commit/6d3e8b23b2d04726c2ae1dcdc7c9160e0a792a2f)
+
+Open commit detailssuccess
+
+18 hours agoAug 22, 2026
+
+[6d3e8b2](https://github.com/itechmeat/open-second-brain/commit/6d3e8b23b2d04726c2ae1dcdc7c9160e0a792a2f) · 18 hours agoAug 22, 2026
+
+## History
+
+[187 Commits](https://github.com/itechmeat/open-second-brain/commits/main/)
+
+Open commit details
+
+[View commit history for this file.](https://github.com/itechmeat/open-second-brain/commits/main/) 187 Commits
+
+## Folders and files
+
+| Name | Name | Last commit message | Last commit date |
+| --- | --- | --- | --- |
+| [.agents/plugins](https://github.com/itechmeat/open-second-brain/tree/main/.agents/plugins "This path skips through empty directories") | [.agents/plugins](https://github.com/itechmeat/open-second-brain/tree/main/.agents/plugins "This path skips through empty directories") |  |  |
+| [.claude-plugin](https://github.com/itechmeat/open-second-brain/tree/main/.claude-plugin ".claude-plugin") | [.claude-plugin](https://github.com/itechmeat/open-second-brain/tree/main/.claude-plugin ".claude-plugin") |  |  |
+| [.codex-plugin](https://github.com/itechmeat/open-second-brain/tree/main/.codex-plugin ".codex-plugin") | [.codex-plugin](https://github.com/itechmeat/open-second-brain/tree/main/.codex-plugin ".codex-plugin") |  |  |
+| [.githooks](https://github.com/itechmeat/open-second-brain/tree/main/.githooks ".githooks") | [.githooks](https://github.com/itechmeat/open-second-brain/tree/main/.githooks ".githooks") |  |  |
+| [.github/workflows](https://github.com/itechmeat/open-second-brain/tree/main/.github/workflows "This path skips through empty directories") | [.github/workflows](https://github.com/itechmeat/open-second-brain/tree/main/.github/workflows "This path skips through empty directories") |  |  |
+| [bin](https://github.com/itechmeat/open-second-brain/tree/main/bin "bin") | [bin](https://github.com/itechmeat/open-second-brain/tree/main/bin "bin") |  |  |
+| [docs](https://github.com/itechmeat/open-second-brain/tree/main/docs "docs") | [docs](https://github.com/itechmeat/open-second-brain/tree/main/docs "docs") |  |  |
+| [hooks](https://github.com/itechmeat/open-second-brain/tree/main/hooks "hooks") | [hooks](https://github.com/itechmeat/open-second-brain/tree/main/hooks "hooks") |  |  |
+| [install](https://github.com/itechmeat/open-second-brain/tree/main/install "install") | [install](https://github.com/itechmeat/open-second-brain/tree/main/install "install") |  |  |
+| [openclaw](https://github.com/itechmeat/open-second-brain/tree/main/openclaw "openclaw") | [openclaw](https://github.com/itechmeat/open-second-brain/tree/main/openclaw "openclaw") |  |  |
+| [plugins](https://github.com/itechmeat/open-second-brain/tree/main/plugins "plugins") | [plugins](https://github.com/itechmeat/open-second-brain/tree/main/plugins "plugins") |  |  |
+| [schemas/brain](https://github.com/itechmeat/open-second-brain/tree/main/schemas/brain "This path skips through empty directories") | [schemas/brain](https://github.com/itechmeat/open-second-brain/tree/main/schemas/brain "This path skips through empty directories") |  |  |
+| [scripts](https://github.com/itechmeat/open-second-brain/tree/main/scripts "scripts") | [scripts](https://github.com/itechmeat/open-second-brain/tree/main/scripts "scripts") |  |  |
+| [skills](https://github.com/itechmeat/open-second-brain/tree/main/skills "skills") | [skills](https://github.com/itechmeat/open-second-brain/tree/main/skills "skills") |  |  |
+| [src](https://github.com/itechmeat/open-second-brain/tree/main/src "src") | [src](https://github.com/itechmeat/open-second-brain/tree/main/src "src") |  |  |
+| [templates](https://github.com/itechmeat/open-second-brain/tree/main/templates "templates") | [templates](https://github.com/itechmeat/open-second-brain/tree/main/templates "templates") |  |  |
+| [tests](https://github.com/itechmeat/open-second-brain/tree/main/tests "tests") | [tests](https://github.com/itechmeat/open-second-brain/tree/main/tests "tests") |  |  |
+| [.gitignore](https://github.com/itechmeat/open-second-brain/blob/main/.gitignore ".gitignore") | [.gitignore](https://github.com/itechmeat/open-second-brain/blob/main/.gitignore ".gitignore") |  |  |
+| [.mcp.json](https://github.com/itechmeat/open-second-brain/blob/main/.mcp.json ".mcp.json") | [.mcp.json](https://github.com/itechmeat/open-second-brain/blob/main/.mcp.json ".mcp.json") |  |  |
+| [.oxfmtrc.json](https://github.com/itechmeat/open-second-brain/blob/main/.oxfmtrc.json ".oxfmtrc.json") | [.oxfmtrc.json](https://github.com/itechmeat/open-second-brain/blob/main/.oxfmtrc.json ".oxfmtrc.json") |  |  |
+| [CHANGELOG.md](https://github.com/itechmeat/open-second-brain/blob/main/CHANGELOG.md "CHANGELOG.md") | [CHANGELOG.md](https://github.com/itechmeat/open-second-brain/blob/main/CHANGELOG.md "CHANGELOG.md") |  |  |
+| [CLAUDE.md](https://github.com/itechmeat/open-second-brain/blob/main/CLAUDE.md "CLAUDE.md") | [CLAUDE.md](https://github.com/itechmeat/open-second-brain/blob/main/CLAUDE.md "CLAUDE.md") |  |  |
+| [LICENSE](https://github.com/itechmeat/open-second-brain/blob/main/LICENSE "LICENSE") | [LICENSE](https://github.com/itechmeat/open-second-brain/blob/main/LICENSE "LICENSE") |  |  |
+| [README.md](https://github.com/itechmeat/open-second-brain/blob/main/README.md "README.md") | [README.md](https://github.com/itechmeat/open-second-brain/blob/main/README.md "README.md") |  |  |
+| [\_\_init\_\_.py](https://github.com/itechmeat/open-second-brain/blob/main/__init__.py "__init__.py") | [\_\_init\_\_.py](https://github.com/itechmeat/open-second-brain/blob/main/__init__.py "__init__.py") |  |  |
+| [after-install.md](https://github.com/itechmeat/open-second-brain/blob/main/after-install.md "after-install.md") | [after-install.md](https://github.com/itechmeat/open-second-brain/blob/main/after-install.md "after-install.md") |  |  |
+| [bun.lock](https://github.com/itechmeat/open-second-brain/blob/main/bun.lock "bun.lock") | [bun.lock](https://github.com/itechmeat/open-second-brain/blob/main/bun.lock "bun.lock") |  |  |
+| [bunfig.toml](https://github.com/itechmeat/open-second-brain/blob/main/bunfig.toml "bunfig.toml") | [bunfig.toml](https://github.com/itechmeat/open-second-brain/blob/main/bunfig.toml "bunfig.toml") |  |  |
+| [cli.py](https://github.com/itechmeat/open-second-brain/blob/main/cli.py "cli.py") | [cli.py](https://github.com/itechmeat/open-second-brain/blob/main/cli.py "cli.py") |  |  |
+| [install.md](https://github.com/itechmeat/open-second-brain/blob/main/install.md "install.md") | [install.md](https://github.com/itechmeat/open-second-brain/blob/main/install.md "install.md") |  |  |
+| [link-ratchet.json](https://github.com/itechmeat/open-second-brain/blob/main/link-ratchet.json "link-ratchet.json") | [link-ratchet.json](https://github.com/itechmeat/open-second-brain/blob/main/link-ratchet.json "link-ratchet.json") |  |  |
+| [openclaw.plugin.json](https://github.com/itechmeat/open-second-brain/blob/main/openclaw.plugin.json "openclaw.plugin.json") | [openclaw.plugin.json](https://github.com/itechmeat/open-second-brain/blob/main/openclaw.plugin.json "openclaw.plugin.json") |  |  |
+| [oxlint.json](https://github.com/itechmeat/open-second-brain/blob/main/oxlint.json "oxlint.json") | [oxlint.json](https://github.com/itechmeat/open-second-brain/blob/main/oxlint.json "oxlint.json") |  |  |
+| [package.json](https://github.com/itechmeat/open-second-brain/blob/main/package.json "package.json") | [package.json](https://github.com/itechmeat/open-second-brain/blob/main/package.json "package.json") |  |  |
+| [plugin.yaml](https://github.com/itechmeat/open-second-brain/blob/main/plugin.yaml "plugin.yaml") | [plugin.yaml](https://github.com/itechmeat/open-second-brain/blob/main/plugin.yaml "plugin.yaml") |  |  |
+| [pyproject.toml](https://github.com/itechmeat/open-second-brain/blob/main/pyproject.toml "pyproject.toml") | [pyproject.toml](https://github.com/itechmeat/open-second-brain/blob/main/pyproject.toml "pyproject.toml") |  |  |
+| [tsconfig.json](https://github.com/itechmeat/open-second-brain/blob/main/tsconfig.json "tsconfig.json") | [tsconfig.json](https://github.com/itechmeat/open-second-brain/blob/main/tsconfig.json "tsconfig.json") |  |  |
+| View all files |
+
+## Repository files navigation
+
+# Open Second Brain
+
+[Permalink: Open Second Brain](https://github.com/itechmeat/open-second-brain#open-second-brain)
+
+[![Open Second Brain - your knowledge, amplified by AI](https://github.com/itechmeat/open-second-brain/raw/main/docs/images/readme-poster.jpg)](https://github.com/itechmeat/open-second-brain/blob/main/docs/images/readme-poster.jpg)
+
+> An [Obsidian](https://obsidian.md/)-native memory layer for your AI agent. Plain Markdown you own, in the same vault you already use.
+
+Open Second Brain plugs into [Hermes Agent](https://github.com/NousResearch/hermes-agent) and turns your Obsidian vault into a memory layer the agent reads and writes through deterministic CLI / MCP tools. Preferences, signals, evidence, and audit trails are real `.md` files under `Brain/` in the vault you already open in Obsidian every day. You can grep them, version them with git, search them in Obsidian, edit them by hand. No daemon, no vector black box, no hidden state outside the vault.
+
+## What is new
+
+[Permalink: What is new](https://github.com/itechmeat/open-second-brain#what-is-new)
+
+Open Second Brain 1.51.0 is about which memories earn their keep and how generated artifacts explain what they rest on. Eight tracker cards picked by priority, read against the real source before anything was designed - a pass that corrected three of them, because the lane one wanted to gate did not exist, the dependency diagram another wanted cannot be drawn from a scanner that deliberately collects no edges, and the partner enrichment a third described would have crossed a boundary the code declares absolute. A ninth card was refused outright rather than shipped as a shell: a local transformer embedding provider stands against a written no-ML-runtime invariant, and a registered provider that cannot embed is a stub, not a seam.
+
+What shipped instead: a deterministic salience gate decides which facts enter the dream pass's expensive fold, from three signals the system already computes, and names every exclusion; a batch verb mines memory signals from imported sessions through a validated model lane that can only reach the speculative inbox, never a confirmed preference; a note delete can follow structured provenance - and only structured provenance - under one snapshot and an exact count guard; expiration can finally be set at creation and changed afterwards from every writing surface, through one normalizer; mature vault pages become staged Agent Skill drafts that materialize outside the vault only on explicit accept; the architect overview states its codegraph verdict, draws a containment diagram it can actually prove, and lists the repository's mined decision candidates; and a one-shot design-note verb grounds a topic in tension, decision, and truth records and demands exactly one recommended alternative back.
+
+Under all of it sits one new piece of shared structure: the three divergent needs-llm-step envelope shapes the project had accumulated now share a named type, and the payload rules the deliberately shallow shape language cannot express - cardinality, caps, confidence floors - live in one fail-closed semantic-check registry. An independent reviewer given the finished branch returned one blocking finding and eleven non-blocking ones, all applied; the [CHANGELOG](https://github.com/itechmeat/open-second-brain/blob/main/CHANGELOG.md) names each.
+
+Between this wave and the last feature wave, 1.49.0 through 1.50.3 made a label into a real boundary, taught the installer to see what the machine already has, and fixed a Hermes bridge that discarded the one line of stderr naming why it could not start - the [CHANGELOG](https://github.com/itechmeat/open-second-brain/blob/main/CHANGELOG.md) has the detail.
+
+Previous release, 1.48.0, was about work you can watch, bound and stop: the long passes emit progress and observe interrupts where an interrupt can physically be observed, a successful install states what it measured rather than what it hoped, the project scanner stopped entering what the repository ignores (24148 files visited became 2729), and five independent reviewers returned forty-four reproduced findings against the finished branch, all resolved by measurement rather than argument.
+
+Previous release, 1.47.0, wired what already existed: nine capabilities that were exported, tested and used elsewhere, each with a site that needed them and did not call them - a destructive-operation gate with two call sites against roughly twenty-five destructive operations, and a ranker that read a document's authoring instant nine lines after ranking on the file's modification time.
+
+Previous release, 1.46.0, was about claims the code could not back up. Nine units, four of them reported on the public tracker, and what they have in common is not a subsystem: in every one, the information needed to tell two cases apart either existed already and was thrown away, or cost one filesystem call nobody made. A search that returned nothing could not tell you whether the corpus was empty or the embedder was down, though fifteen degradation signals were being computed and then flattened into prose or dropped. Entity intake decided whether to trust a source from the shape of a string, never asking whether a file was behind it - and the caller supplying that string is the same agent that read the material being classified. Two concurrent writers racing for the same filename lost one of the records outright, measured at twelve dropped events out of twenty-four. The Hermes plugin and the core resolved different vaults while a docstring claimed they were identical, which is why a setup that worked showed as unconfigured for five weeks with nobody able to say why.
+
+You can now say what you want indexed instead of listing everything you do not, with `vault.include_paths`; absent, it changes nothing, and that is measured against the previous release rather than asserted. A write tells you what is wrong with the page it just wrote, instead of deferring to a sweep that may never run. Recall telemetry carries which channel delivered, so a hook that was never installed and a hook that ran and stayed quiet stop looking identical. Every advertised tool parameter is documented and CI keeps it that way, and an unknown argument is named back to you with a suggestion rather than silently ignored.
+
+Some of what was asked for is not here, and the absence is a decision. There was no registry of embedding-provider shutdown dates, because the only way to build one is a hand-maintained table over an open set of endpoints that would rot in place and be believed - a decision 1.48.0 reverses above, having answered that objection rather than set it aside. The schema-completeness guard covers input schemas only, because the output vocabulary declares union-typed fields with no type on purpose and the rule would demand a lie there. And the fix the intake issue asked for - let the host supply the trust verdict instead of the caller - is unbuildable, because no unforgeable caller identity exists in this surface, a conclusion this project had already reached elsewhere and not applied here. What shipped instead removes the free bypass and makes the claim auditable; it does not make the claim true, and the code says so. Four reviewers were then given the finished branch with no knowledge of how it was built, and told that a comment is a claim rather than evidence. They found twelve defects, two of them regressions this work introduced and invisible to its own tests. All are fixed, and the [CHANGELOG](https://github.com/itechmeat/open-second-brain/blob/main/CHANGELOG.md) names them.
+
+Previous release, 1.45.1, fixed a Hermes flush that had been discarded at the boundary since 0.32.0 and a starter vault that went stale ninety days after it was authored. Before it, 1.45.0 was about silence not being an answer, and 1.44.0 about what the index already knew: thirteen units on the retrieval path, most of them values the system computed and discarded before anything could see them. Details for all three live in the [CHANGELOG](https://github.com/itechmeat/open-second-brain/blob/main/CHANGELOG.md).
+
+Previous release, 1.43.0, was about provenance at the boundary: what enters your vault, under whose authority, validated against what, and backed by what proof. Entities an agent extracts from an untrusted source - a scraped page, a fetched article - now land in a quarantine lane instead of becoming first-class Brain entities, and trust is derived from the shape of the source identity rather than from any word list. You can declare in `_brain.yaml` which path prefixes a caller-named write may touch, and a write outside them is refused with the command that resolves it; its authority is the config file, not the caller, because a caller can name itself anything. Note creation gains an idempotent skip whose result tells you which happened, validation before the write lands, and a template mode with a deliberately small grammar. A back-dated note - an imported log, a meeting record - now ranks by the date its body declares rather than by when the file was touched, with the source of that date recorded beside it. Schema mutations can be previewed before they touch the vault, which matters more than it sounds: `--dry-run` was previously parsed and ignored. And an outcome an agent posts about its own work now carries the kernel's own on-disk evidence beside the claim, with a mismatch recorded rather than resolved.
+
+Two things 1.43.0 deliberately did not build are worth knowing about, because their absence was a decision rather than an omission. There is no independent verifier, because agent identity here is an unauthenticated string and two records asserting two names chosen by one process are not two actors. And there is no pack fetched by URL, because a schema pack has no portable representation and no registry to install into. Five independent reviewers were given the finished branch and found thirty defects, nine of them introduced by this work and three of them mechanisms nothing could make fire; one of those three was removed rather than repaired. The [CHANGELOG](https://github.com/itechmeat/open-second-brain/blob/main/CHANGELOG.md) has the detail, including what was found and deliberately left open.
+
+Previous release, 1.42.0, was a structural wave with no new capability: the six modules that cost the most to change, both import cycles removed, and nine places where absence and inability-to-examine had been collapsed into one answer. Details live in the [CHANGELOG](https://github.com/itechmeat/open-second-brain/blob/main/CHANGELOG.md).
+
+Previous release, 1.41.0, was a signals-that-survive wave: eight units that carry a signal the system already computes the last few metres, to the decision it should have changed. Ingest now honours the repository's own `.gitignore`, nested ignore files, `.git/info/exclude` and submodule boundaries, through the same discovery module the hygiene scan uses - so a repo path stops pulling in the build artifacts it already declares as noise. A recall graded weak no longer evaporates when the call returns: repeated weak recall on the same question becomes a tracked, self-closing gap task. A query that names a period is ranked for that period instead of against it, detected from ISO and `since:`/`until:` tokens only so it behaves the same in every language. A scope-less capture says which routing signal it was missing and which scopes the vault actually has. Model-authored payloads are checked against a declared shape before they become knowledge, unconditionally - a validator that can be switched off is one the write path cannot rely on. Plain text can now seed a fact or a skill, not only a taste signal. And resumed work is recognised by a declared identity rather than by a fifteen-minute clock, so a branch or worktree switch stops breaking the chain. A ninth unit was built, reviewed, and reverted rather than shipped, because proving it inert was easier than pretending it was not - the [CHANGELOG](https://github.com/itechmeat/open-second-brain/blob/main/CHANGELOG.md) says why.
+
+## Why
+
+[Permalink: Why](https://github.com/itechmeat/open-second-brain#why)
+
+- **Lives in your Obsidian vault.** Open `Brain/preferences/pref-no-internal-abbrev.md` in Obsidian and you literally see what your agent learned about you - title, status, evidence count, confidence band, body text. Wikilinks, backlinks, graph view all work.
+- **You own the data.** Plain Markdown on your filesystem. No service to cancel, no cloud account, no schema migration when a vendor pivots. Syncthing to your other machines if you want.
+- **Memory that learns deterministically.** A `dream` pass turns repeat signals into rules and retires the ones nothing applies any more. Counters and atomic file moves - no LLM inside the algorithm, no surprise hallucinations in your memory.
+- **One vault, every agent.** Hermes Agent is the primary integration. Claude Code, OpenAI Codex, Cursor, Aider, OpenClaw, opencode, Grok Build, kiro, Copilot CLI, Gemini CLI, and Pi all plug into the same Brain through MCP.
+
+## One vault, many runtimes
+
+[Permalink: One vault, many runtimes](https://github.com/itechmeat/open-second-brain#one-vault-many-runtimes)
+
+Render
+
+Loading
+
+```
+flowchart LR
+    Vault[("Your vault<br/>Brain/ - plain Markdown")]
+    Hermes["**Hermes Agent**<br/>(primary)"]
+    CC[Claude Code]
+    Codex[OpenAI Codex]
+    Others["Cursor · Aider · OpenClaw<br/>opencode · Grok Build · kiro · Copilot CLI<br/>Gemini CLI · Pi · any MCP host"]
+
+    Hermes <==> Vault
+    CC <--> Vault
+    Codex <--> Vault
+    Others <--> Vault
+
+    style Hermes fill:#1e3a5f,stroke:#90caf9,color:#fff
+    style Vault fill:#5d3a9b,stroke:#ce93d8,color:#fff
+```
+
+Hermes Agent owns the schedule (dream cron, daily digests, Telegram delivery). Other runtimes participate as readers and writers of the same Brain through MCP - no per-runtime fork of the memory.
+
+## Quick start with Hermes Agent
+
+[Permalink: Quick start with Hermes Agent](https://github.com/itechmeat/open-second-brain#quick-start-with-hermes-agent)
+
+**The simplest path - let your agent set it up.** Paste this into Hermes (or whichever AI agent already has shell access on the target machine):
+
+> Install Open Second Brain for me by following the steps at [https://github.com/itechmeat/open-second-brain/blob/main/install/hermes.md](https://github.com/itechmeat/open-second-brain/blob/main/install/hermes.md). My vault is at `/path/to/your-vault`.
+
+The agent reads the install doc, runs every command, and verifies the result. That's it.
+
+If you prefer running the steps yourself:
+
+```
+# 1. Install the plugin
+hermes plugins install itechmeat/open-second-brain --enable
+hermes gateway restart
+
+# 2. Put `o2b` on PATH
+~/.hermes/plugins/open-second-brain/scripts/o2b install-cli
+
+# 3. Bootstrap the vault
+o2b init       --vault /path/to/your-vault --name "My Second Brain"
+o2b brain init --vault /path/to/your-vault --primary-agent <agent-name>
+
+# 4. Verify
+o2b doctor --vault /path/to/your-vault
+```
+
+Enable Open Second Brain as the memory provider in `~/.hermes/config.yaml` (`memory.provider: open-second-brain`) and restart the gateway one more time - the agent now injects `Brain/active.md` into its system prompt, recalls context before each turn, and writes signals through `brain_feedback`, all through the one native provider. Full step-by-step: [`install/hermes.md`](https://github.com/itechmeat/open-second-brain/blob/main/install/hermes.md).
+
+## Other runtimes
+
+[Permalink: Other runtimes](https://github.com/itechmeat/open-second-brain#other-runtimes)
+
+| Runtime | Install |
+| --- | --- |
+| Claude Code | Marketplace plugin (bundled `.mcp.json` \+ hooks) - [`install/claudecode.md`](https://github.com/itechmeat/open-second-brain/blob/main/install/claudecode.md) |
+| OpenAI Codex | `codex plugin marketplace add ...` then `o2b install --target codex --apply` (MCP servers via `codex mcp add`, or a `config.toml` merge without the binary) - [`install/codex.md`](https://github.com/itechmeat/open-second-brain/blob/main/install/codex.md) |
+| OpenClaw | Native JS plugin, no MCP needed - [`install/openclaw.md`](https://github.com/itechmeat/open-second-brain/blob/main/install/openclaw.md) |
+| opencode | `o2b install --target opencode --apply` (MCP servers + native plugin) - [`install/opencode.md`](https://github.com/itechmeat/open-second-brain/blob/main/install/opencode.md) |
+| Grok Build | `o2b install --target grok --apply` (MCP in `config.toml` \+ native hooks) - [`install/grok.md`](https://github.com/itechmeat/open-second-brain/blob/main/install/grok.md) |
+| Cursor · Aider · kiro · Copilot CLI · Gemini CLI · Pi | `o2b install --target <name> --apply` \- see [`install/`](https://github.com/itechmeat/open-second-brain/blob/main/install) |
+| Any other MCP host | `o2b install --target generic --apply` \- [`install/generic.md`](https://github.com/itechmeat/open-second-brain/blob/main/install/generic.md) |
+
+Each non-Hermes target writes a sidecar manifest under `<vault>/.open-second-brain/install.lock.json` so `o2b uninstall --target <name> --apply` removes exactly what it added.
+
+## What you get
+
+[Permalink: What you get](https://github.com/itechmeat/open-second-brain#what-you-get)
+
+- **Your memory as Markdown.** Every rule the agent learns about you is a file under `Brain/` you can open, edit, grep, and version. Obsidian wikilinks, backlinks, and the graph view just work - there is no separate UI to learn.
+
+- **Memory that learns, and forgets, on its own.** A nightly `dream` pass turns repeated corrections into rules and retires the ones nothing uses any more. Deterministic by design: counters and atomic file moves, no LLM guessing inside your memory.
+
+- **One brain, every agent.** Teach a rule in one agent and the next one already knows it - Hermes, Claude Code, Codex, Cursor, and the rest read and write the same vault.
+
+- **You stay in control.** Pin, merge, retire, or roll back any rule from the `o2b` CLI. Every Brain mutation takes a verified snapshot first, so a bad change is one `o2b brain rollback` away.
+
+- **Search that explains itself.** Keyword plus an optional semantic layer over your vault, with results that show why they surfaced and what was missing - not a black box. Opt into a structured per-result score breakdown (`explain`), inline trust metadata (age, superseded, conflict), a relevance threshold that returns nothing rather than weak noise, and reinforcement that lifts memories you have marked useful. Track retrieval quality over time with `brain_eval` and the recall benchmark (hit@k, MRR, answer-containment@k).
+
+- **Conversations survive compaction.** When the host compresses context and rotates the session id, capture and recall stitch the segments back into one conversation - any segment id returns the whole lineage.
+
+- **Memory that cleans itself, on your terms.**`o2b brain hygiene scan` surfaces contested facts, near-duplicate rules, stale derived pages, and never-recalled memories; `apply` executes only the findings you select, and stale pages recompile from their recorded sources with a dry-run preview.
+
+- **A vault that stays fresh, consistent, and scoped.**`o2b search watch` keeps the index live as you edit, debounced and incremental; note identity is Unicode-normalized so the same file is one entry across macOS and Linux devices instead of a phantom cross-device duplicate; and recall accepts an opt-in `agent_scope` so a page marked with an `owner:` is reachable only to its owner while shared pages stay open to all.
+
+- **Knowledge that knows where it came from.** Drop a source document and the agent's extraction becomes cross-referenced entity and concept pages plus a summary page that backlinks the source and lists its connections; N sources become one dated report whose every finding cites the source that flagged it; a derived fact carries a `deduced`/`inferred` provenance level and links back to its premises, and recall trusts an operator-stated rule above a machine-derived one. A fact can declare an `owner:` so multi-agent brains keep separate truth spaces, and a standing-query attention flow surfaces the open loops you declare. The plugin never runs a model itself - the agent owns generation, the vault owns the durable, provenanced record - and every behaviour is opt-in.
+
+- **An index that survives interruption.** Stopping `o2b search watch` mid-sync finishes the in-flight pass at a file boundary before exiting (within `search_shutdown_grace_seconds`) instead of killing it mid-write; an incremental run is already resumable through the unchanged-file fastpath, and `search_resume_reindex` extends that to a full rebuild - an interrupted reindex resumes its staging build instead of starting over, guarded by a signature so a drifted build is discarded rather than trusted. Both default off, so behaviour is unchanged unless you ask for it.
+
+- **A brain you can carry, hand off, and write to in process.**`o2b brain bank-export` serialises a whole vault - preferences, the page graph, a per-page interchange contract (path, kind, advisory confidence/provenance, citations, aliases, freshness), and the sources dashboard - into one deterministic, schema-versioned bundle for backup, migration, or downstream-tool ingest; `bank-import` reconstructs the page graph and the preferences - the latter through the audited preference transaction, so the trial window, confidence band, revision counter and audit trail are maintained and a bundle that is behind the vault is refused instead of rewinding it - and reports the rest as carried-not-restored rather than faking a full restore. A `brain_create_note` MCP tool writes an actual vault note (path + frontmatter + content) atomically, refusing traversal, the Brain root, and clobbering. And `createBrain(vault)` is a thin in-process SDK over the same core functions - bank/graph export-import, preference export, source ingest plus list/get/delete, and note creation - so scripts and agents manage brain content without the CLI or MCP layer.
+
+- **Recall you can tune, and a working set that prunes itself.**`o2b search --profile fast|balanced|thorough` (and the `brain_search``profile` field) pick a recall preset over the same bounded knobs the self-tuner uses - an explicit profile wins over a learned grid point, and no profile leaves ranking bit-for-bit unchanged. `o2b brain file-context <path>` surfaces prior vault work that mentions a file before you read it; `o2b brain co-occurrence` proposes relationship edges between entities repeatedly co-referenced from the same notes, scored structurally over the wikilink graph with no natural-language word list in any language; and `o2b brain continuity rank` weights working-memory records by a usage-driven decay derived only from real recall telemetry, so stale decisions fade while actively-recalled ones stay prominent. All deterministic, all read-only or suggestion-only.
+
+- **Session knowledge you can query, trace, and walk.**`o2b brain session-summary` (and `brain_session_summary`) stores a session-scoped digest over four categories - request, decisions, learnings, next\_steps - that the agent extracts and the kernel only stores, so you can ask what a session decided as one unit. `o2b brain idea-lineage <id>` traces how a derived artifact was reached as an observation to synthesis to conclusion graph over the edges already recorded (continuity `sourceRefs`, or a preference's belief-evolution), cycle-guarded and depth-bounded. `o2b brain note-history <path>` splits a note's git history into episodic phases on a deterministic commit-time gap - language-agnostic, no commit-message parsing. The kernel never calls a model; absent inputs report honestly rather than fabricating.
+
+- **Operational readability for code partners and large vaults.** Open Second Brain now exposes a read-only CodeGraph report (`o2b partner codegraph report`, `brain_codegraph_report`) that resolves the in-scope code project, reports the codegraph index state with node and edge counts, and structurally parses Cargo.toml for Rust workspace members. The report is honest about missing CLIs, missing indexes, and non-Rust projects. For large vaults, community materialization can run in fixed-size batches (`o2b brain clusters run --batch-size N`, `brain_clusters``batch_size`) with per-batch success or isolated failure reporting, while the default run stays byte-identical.
+
+- **Consistent feedback categorization.** A vault-local `feedback.default_scope` in `Brain/_brain.yaml` gives agent-recorded signals a consistent category (for example `coding`) when no explicit scope is provided, with the same precedence across the inbox signal, its shared-namespace mirror, and any force-confirmed preference. The effective scope is computed once at the signal write boundary and byte-identical output is preserved when the setting is absent or no explicit scope is given.
+
+- **Path-safe vault writes.** The write-session commit chokepoint now re-resolves every target through `ensureInsideVault` before any directory creation, read, or write, catching symlinked ancestors that point outside the vault root. The backstop fails closed: a target resolving outside the configured vault is rejected and nothing is written. All other caller-derived vault paths already funnel through guarded constructors; regression tests pin both invariants.
+
+- **Recall that pays for depth only on demand.** General vault search now offers the same progressive 3-layer disclosure session-recall already had. `o2b search "<q>" --disclosure cards` (and the `brain_search``disclosure: "cards"` field) returns compact layer-1 cards - path, title, score, reasons, a bounded snippet, and a `path:Lstart-Lend` pointer - instead of full content per hit, so recall stays token-cheap. Drill a hit with `o2b search expand --chunk <id>` (or `brain_search_expand`) to get layer 2 (the fuller note) and layer 3 (the raw chunk transcript, paginated by cursor). It reuses the existing index read - no new index, no model - and the default `full` mode is byte-identical to before. Cards compose with cross-vault recall too: `--global --disclosure cards` returns the token-cheap layer-1 cards merged across every origin (each labelled by its origin), not an empty result set.
+
+- **A today surface for the operator, and prose that writes back.**`o2b brain today` (and `brain_brief view=today`) renders a read-only, live-derived dashboard - due and overdue obligations, open loops, a chronologically merged typed activity timeline with relative ages, and totals - where every section is re-derived on demand from the vault, never stored, and a failing section reports its error while the rest still render. Jot `@osb loop <text>` in any note to keep an intention visible until you close it with `@osb loop close id=<id>` (ids are printed on the dashboard; loop markers survive scans and are never consumed). Jot `@osb set note=<target> field=<field> value=<value>` and `o2b brain apply-markers --apply` turns it into a schema-validated frontmatter mutation - fail-closed target resolution (ambiguous titles list candidates instead of guessing), one `attribute-write` audit event per applied change with the prior value, idempotent consumption of applied markers, and the whole write path gated behind the opt-in `guardrails.marker_writeback` flag. Report mode needs no flag and writes nothing.
+
+- **It knows the machine it is installed on.**`o2b install --friction` lays every supported runtime side by side - how it is installed, whether it caps the tool surface, whether a `--check` on it is a file comparison or a live question put to the host, and whether this build can read the transcripts that runtime writes. Two hosts can now be ASKED (`codex mcp list`, `copilot mcp list`) instead of inferred from a config file, so "installed" and "actually loaded" stop being the same answer. `o2b state status` does the same for the vault: forty declared state locations, each with where it resolved, whether it is reachable, and which setting put it there - and `o2b state migrate` moves the lot to another directory behind a digest manifest, refusing before it commits and reversible after. `o2b brain import-session --discover` finds the session logs already on your disk and says which have never been imported, so cross-agent recall no longer depends on your knowing where each runtime keeps its transcripts.
+
+
+That is the day-to-day picture. The full capability surface, every CLI verb, and the mental model live in the [documentation](https://github.com/itechmeat/open-second-brain#documentation) below.
+
+## Safety
+
+[Permalink: Safety](https://github.com/itechmeat/open-second-brain#safety)
+
+- Plain Markdown on your filesystem. No daemon, no background writes. The MCP server is a stdio subprocess that exits with the parent runtime. An optional HTTP transport (`o2b mcp --transport http`) is off by default and safe by design: it binds loopback (`127.0.0.1`), enforces a Host/Origin DNS-rebinding guard on every request, and exposes an unauthenticated `GET /health` liveness probe. A bearer token (`--api-key`) is optional on loopback and mandatory when binding a non-loopback host - the server refuses to expose an unauthenticated endpoint on the network. On `SIGTERM`/`SIGINT` either transport stops accepting new work, finishes what is already running under a bounded deadline (`O2B_MCP_DRAIN_MS`, ten seconds by default), and only then exits - so a shutdown never truncates a tool call, and `/health` reports `draining` while it happens.
+- Your vault is the only source of truth - no hidden state, no cloud copy.
+- Brain mutations (`dream`, `merge`, `upgrade`) take a pre-run snapshot with a SHA-256 sidecar; `o2b brain rollback` aborts on drift unless `--force-rollback`. Destructive cleanups (`forget-source --confirm`, `entity prune --confirm`) run behind the same snapshot gate and report their recovery point; dry runs take no snapshot.
+- Store hardening: `o2b brain doctor --remediate` can tighten existing `Brain/` files to owner-only permissions (dry-run first, idempotent), the doctor flags vault-internal symlinks that resolve outside the vault, and MCP responses carry an opaque `vault://` store reference instead of the absolute host path unless `expose_host_paths: true` is set.
+- Secrets are not supposed to live in the vault. Daily logs and config exports run through a best-effort redactor, `$secret:NAME` references resolve from the local environment and are never stored, and Brain redaction strips `<private>...</private>` regions before storage.
+- Automatically surfaced Brain context passes through a deterministic prompt-injection guard; filtered output returns a placeholder with a reason code and the source Markdown is never rewritten. Opt into `untrusted_source_delimiting` for language-agnostic structural containment instead: an untrusted span is wrapped in a provenance-carrying `<untrusted_source path sha256>` delimiter and neutralized by structure (invisible/control characters, delimiter breakouts) rather than a per-language word list, losslessly and identically for every language.
+- Context receipts and recall telemetry are opt-in and store redacted metadata, hashes, and counters rather than raw prompt text.
+
+## Updating
+
+[Permalink: Updating](https://github.com/itechmeat/open-second-brain#updating)
+
+```
+o2b update                    # detect runtimes, skip unchanged, apply, verify
+o2b doctor                    # confirm the new manifest validates
+```
+
+Updates need no manual symlink surgery: hooks resolve the active plugin version
+on their own and the `~/.local/bin` CLI symlinks self-heal on the next session
+start. Per-runtime upgrade paths and the canonical version source live in
+[`install.md`](https://github.com/itechmeat/open-second-brain/blob/main/install.md); the update-safety contract (and the invariants any
+change to hooks/launcher/install must keep) lives in
+[`docs/updating.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/updating.md).
+
+## Documentation
+
+[Permalink: Documentation](https://github.com/itechmeat/open-second-brain#documentation)
+
+| Topic | Doc |
+| --- | --- |
+| Mental model, vault layout, dream mechanics | [`docs/how-it-works.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/how-it-works.md) |
+| MCP protocol, tools, lifecycle, writer split | [`docs/mcp.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/mcp.md) |
+| Full CLI reference (every verb, every flag) | [`docs/cli-reference.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/cli-reference.md) |
+| Update safety contract + hook/launcher invariants | [`docs/updating.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/updating.md) |
+| Hermes cron jobs (daily digest, discipline report) | [`docs/hermes-cron.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/hermes-cron.md) |
+| Cross-project pointer (multi-host vaults) | [`docs/cross-project-pointer.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/cross-project-pointer.md) |
+| Observability contract (events, gates, payloads) | [`docs/observability.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/observability.md) |
+| Metrics layer (the dashboard data contract) | [`docs/metrics.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/metrics.md) |
+| Frozen-surface and stability policy | [`docs/stability.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/stability.md) |
+| Architecture | [`docs/architecture.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/architecture.md) |
+| Origin idea | [`docs/idea.md`](https://github.com/itechmeat/open-second-brain/blob/main/docs/idea.md) |
+
+## Uninstalling
+
+[Permalink: Uninstalling](https://github.com/itechmeat/open-second-brain#uninstalling)
+
+```
+o2b uninstall                       # print plan (read-only)
+o2b uninstall --apply-local --remove-cli   # remove local state and symlinks
+```
+
+Your vault is never touched by the uninstall flow. Delete it yourself with normal filesystem tools if you want to.
+
+## License
+
+[Permalink: License](https://github.com/itechmeat/open-second-brain#license)
+
+MIT. Source: [https://github.com/itechmeat/open-second-brain](https://github.com/itechmeat/open-second-brain).
+
+## About
+
+Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections into confirmed preferences with measurable confidence. Adapters ship for Claude Code, Codex, and OpenClaw, with an MCP server for anything else.
+
+[dark-factory.techmeat.dev](https://dark-factory.techmeat.dev/)
+
+### Resources
+
+[Readme](https://github.com/itechmeat/open-second-brain#readme-ov-file)
+
+[MIT license](https://github.com/itechmeat/open-second-brain#MIT-1-ov-file)
+
+[Activity](https://github.com/itechmeat/open-second-brain/activity)
+
+### Stars
+
+**319** stars
+
+### Watchers
+
+**3** watching
+
+### Forks
+
+[**40** forks](https://github.com/itechmeat/open-second-brain/forks)
+
+[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fitechmeat%2Fopen-second-brain&report=itechmeat+%28user%29)
+
+## [Releases](https://github.com/itechmeat/open-second-brain/releases) 137 (137)
+
+[v1.51.0 - what earns its keepLatest\\
+\\
+18 hours agoAug 22, 2026](https://github.com/itechmeat/open-second-brain/releases/tag/v1.51.0)
+
+[\+ 136 releases](https://github.com/itechmeat/open-second-brain/releases)
+
+## [Contributors](https://github.com/itechmeat/open-second-brain/graphs/contributors) 14 (14)
+
+- [![@solaitken](https://avatars.githubusercontent.com/u/271202062?s=64&v=4)](https://github.com/solaitken)
+- [![@claude](https://avatars.githubusercontent.com/u/81847?s=64&v=4)](https://github.com/claude)
+- [![@itechmeat](https://avatars.githubusercontent.com/u/42838667?s=64&v=4)](https://github.com/itechmeat)
+- [![@im-khang](https://avatars.githubusercontent.com/u/131781639?s=64&v=4)](https://github.com/im-khang)
+- [![@DanBennettUK](https://avatars.githubusercontent.com/u/402224?s=64&v=4)](https://github.com/DanBennettUK)
+- [![@lymeswold](https://avatars.githubusercontent.com/u/7137490?s=64&v=4)](https://github.com/lymeswold)
+- [![@ava-bot](https://avatars.githubusercontent.com/u/63364713?s=64&v=4)](https://github.com/ava-bot)
+- [![@ec0m3x](https://avatars.githubusercontent.com/u/66622937?s=64&v=4)](https://github.com/ec0m3x)
+- [![@GMDD59](https://avatars.githubusercontent.com/u/113388522?s=64&v=4)](https://github.com/GMDD59)
+- [![@Starlight143](https://avatars.githubusercontent.com/u/120301692?s=64&v=4)](https://github.com/Starlight143)
+- [![@bitfrost7](https://avatars.githubusercontent.com/u/131593500?s=64&v=4)](https://github.com/bitfrost7)
+- [![@hittosuy](https://avatars.githubusercontent.com/u/231442966?s=64&v=4)](https://github.com/hittosuy)
+- [![@Yori940619](https://avatars.githubusercontent.com/u/286246858?s=64&v=4)](https://github.com/Yori940619)
+
+## Languages
+
+- [TypeScript97.3%](https://github.com/itechmeat/open-second-brain/search?l=typescript)
+- [Python1.6%](https://github.com/itechmeat/open-second-brain/search?l=python)
+- [Other1.1%](https://github.com/itechmeat/open-second-brain/search?l=Other)
+
+You can’t perform that action at this time.
