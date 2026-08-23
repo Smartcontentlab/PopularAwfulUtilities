@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root { --agent-ink:#11161b; --agent-paper:#e9edf0; }
+.agent-shell { font-family:'Space Grotesk',sans-serif; }
+.agent-shell .mono { font-family:'DM Mono',monospace; }
+.agent-shell button,.agent-shell a { transition: background-color .18s ease,color .18s ease,transform .18s ease; }
+.agent-shell button:active { transform:translateY(1px); }
