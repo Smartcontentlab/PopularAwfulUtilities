@@ -1,6 +1,6 @@
-# [Project name]
+# Cyber Array
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Cyber Array is a bounded agent workspace for forming workforces, reviewing skills, sharing scoped memory, and supervising replayable chief-agent runs.
 
 ## Run & Operate
 
@@ -22,15 +22,27 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/cyber-array` — deployable React/Vite product with the Cyber Array command surface and routes for overview, projects, workforces, skills, memory, and runs.
+- `artifacts/mockup-sandbox` — existing approved design sandbox; kept alongside the product.
+- `artifacts/api-server/src/routes/cyber-array.ts` — Express API handlers for the workspace product.
+- `artifacts/api-server/src/lib/seed.ts` — first-run demo data for a populated workspace.
+- `lib/db/src/schema/cyber-array.ts` — Drizzle source of truth for projects, workforces, skills, memory, runs, approvals, events, and artifacts.
+- `lib/api-spec/openapi.yaml` — source of truth for the generated Zod schemas and React Query client.
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Cyber Array is a separate web artifact at `/`, while the component mockup sandbox remains available as its own artifact.
+- Product state is persisted in the shared PostgreSQL/Drizzle database rather than kept in browser mockup state.
+- API request and response contracts are defined in OpenAPI and regenerated into `@workspace/api-zod` and `@workspace/api-client-react`.
+- Skills install into projects, memory writes remain proposals, and external run actions remain approval-gated.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Dashboard pulse with budget, active-agent, approval, and event summaries.
+- Project and workforce creation, status controls, scoped role/tool/credential boundaries, and recovery posture.
+- Skill library search, security notes, provenance review, and project-scoped installation.
+- Shared memory connection status, indexed-note search, project overlays, and reviewable Markdown write proposals.
+- Chief-agent run creation and supervision with worker lineage, budgets, approval gates, artifacts, event history, and replay output.
 
 ## User preferences
 
@@ -38,7 +50,10 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The API server seeds demo records on startup when the Cyber Array tables are empty.
+- Run `pnpm --filter @workspace/api-spec run codegen` after changing `lib/api-spec/openapi.yaml`.
+- The Cyber Array Vite config requires workflow-provided `PORT` and `BASE_PATH`; use the managed web workflow or set both for a manual production build.
+- Preview routes are artifact-routed; do not hardcode localhost or a project domain in browser code.
 
 ## Pointers
 

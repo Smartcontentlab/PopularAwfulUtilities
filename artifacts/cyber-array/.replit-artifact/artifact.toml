@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Cyber Array"
+description = "A bounded agent workspace for creating projects and workforces, installing scoped skills, connecting a shared second brain, and supervising replayable chief-agent runs with approvals and artifacts."
+version = "1.0.0"
+id = "artifacts/cyber-array"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21312
+
+[services.development]
+run = "pnpm --filter @workspace/cyber-array run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/cyber-array", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/cyber-array/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21312"
+BASE_PATH = "/"

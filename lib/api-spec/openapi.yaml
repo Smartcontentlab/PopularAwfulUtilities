@@ -10,6 +10,18 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: workspace
+    description: Cyber Array workspace operations
+  - name: projects
+    description: Project spaces
+  - name: workforces
+    description: Workforce formations and roles
+  - name: skills
+    description: Scoped skill installations
+  - name: memory
+    description: Shared second-brain connection and proposals
+  - name: runs
+    description: Chief-agent runs and replay events
 paths:
   /healthz:
     get:
@@ -24,7 +36,369 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /dashboard:
+    get:
+      operationId: getDashboard
+      tags: [workspace]
+      summary: Get workspace dashboard
+      responses:
+        "200":
+          description: Dashboard overview
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Dashboard"
+  /projects:
+    get:
+      operationId: listProjects
+      tags: [projects]
+      summary: List project spaces
+      responses:
+        "200":
+          description: Project list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Project"
+    post:
+      operationId: createProject
+      tags: [projects]
+      summary: Create a project space
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProjectInput"
+      responses:
+        "201":
+          description: Created project
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Project"
+  /projects/{id}:
+    patch:
+      operationId: updateProject
+      tags: [projects]
+      summary: Update a project space
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProjectUpdate"
+      responses:
+        "200":
+          description: Updated project
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Project"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /workforces:
+    get:
+      operationId: listWorkforces
+      tags: [workforces]
+      summary: List workforces
+      responses:
+        "200":
+          description: Workforce list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Workforce"
+    post:
+      operationId: createWorkforce
+      tags: [workforces]
+      summary: Create a workforce
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WorkforceInput"
+      responses:
+        "201":
+          description: Created workforce
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Workforce"
+  /workforces/{id}:
+    patch:
+      operationId: updateWorkforce
+      tags: [workforces]
+      summary: Update workforce roles and boundaries
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WorkforceUpdate"
+      responses:
+        "200":
+          description: Updated workforce
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Workforce"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /skills:
+    get:
+      operationId: listSkills
+      tags: [skills]
+      summary: List available skills
+      responses:
+        "200":
+          description: Skill library
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Skill"
+  /skills/{id}/install:
+    post:
+      operationId: installSkill
+      tags: [skills]
+      summary: Install a skill into a project
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SkillInstallInput"
+      responses:
+        "201":
+          description: Installation record
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SkillInstallation"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /memory:
+    get:
+      operationId: getMemoryConnection
+      tags: [memory]
+      summary: Get shared second-brain connection
+      responses:
+        "200":
+          description: Memory connection
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MemoryConnection"
+    patch:
+      operationId: updateMemoryConnection
+      tags: [memory]
+      summary: Update shared second-brain connection state
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MemoryConnectionUpdate"
+      responses:
+        "200":
+          description: Updated memory connection
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MemoryConnection"
+  /memory/search:
+    get:
+      operationId: searchMemory
+      tags: [memory]
+      summary: Search the shared memory index
+      parameters:
+        - name: query
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Matching notes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/MemoryNote"
+  /memory/proposals:
+    get:
+      operationId: listMemoryProposals
+      tags: [memory]
+      summary: List proposed Markdown writes
+      responses:
+        "200":
+          description: Proposal queue
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/MemoryProposal"
+    post:
+      operationId: createMemoryProposal
+      tags: [memory]
+      summary: Propose a Markdown write
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MemoryProposalInput"
+      responses:
+        "201":
+          description: Created proposal
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MemoryProposal"
+  /memory/proposals/{id}:
+    patch:
+      operationId: reviewMemoryProposal
+      tags: [memory]
+      summary: Approve or reject a Markdown write proposal
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MemoryProposalReview"
+      responses:
+        "200":
+          description: Reviewed proposal
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MemoryProposal"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /runs:
+    get:
+      operationId: listRuns
+      tags: [runs]
+      summary: List chief-agent runs
+      responses:
+        "200":
+          description: Run list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Run"
+    post:
+      operationId: createRun
+      tags: [runs]
+      summary: Create and start a bounded chief-agent run
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RunInput"
+      responses:
+        "201":
+          description: Created run
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RunDetail"
+  /runs/{id}:
+    get:
+      operationId: getRun
+      tags: [runs]
+      summary: Get a run with lineage, events, approvals, and artifacts
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Run detail
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RunDetail"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /runs/{id}/status:
+    patch:
+      operationId: updateRunStatus
+      tags: [runs]
+      summary: Pause, resume, or stop a run
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RunStatusUpdate"
+      responses:
+        "200":
+          description: Updated run
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Run"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /approvals/{id}:
+    patch:
+      operationId: reviewApproval
+      tags: [runs]
+      summary: Review a pending approval
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ApprovalReview"
+      responses:
+        "200":
+          description: Reviewed approval
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Approval"
+        "404":
+          $ref: "#/components/responses/NotFound"
 components:
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+  responses:
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
   schemas:
     HealthStatus:
       type: object
@@ -33,4 +407,278 @@ components:
           type: string
       required:
         - status
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+      required: [error]
+    Project:
+      type: object
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        team: { type: string }
+        status: { type: string, enum: [active, paused, archived] }
+        memoryPath: { type: string }
+        budgetCap: { type: number }
+        budgetUsed: { type: number }
+        progress: { type: integer }
+        agentCount: { type: integer }
+        artifactCount: { type: integer }
+        runCount: { type: integer }
+        toolBoundary: { type: string }
+        credentialBoundary: { type: string }
+        createdAt: { type: string, format: date-time }
+      required: [id, name, team, status, memoryPath, budgetCap, budgetUsed, progress, agentCount, artifactCount, runCount, toolBoundary, credentialBoundary, createdAt]
+    ProjectInput:
+      type: object
+      properties:
+        name: { type: string, minLength: 1 }
+        team: { type: string, minLength: 1 }
+        memoryPath: { type: string, minLength: 1 }
+        budgetCap: { type: number, minimum: 0 }
+        toolBoundary: { type: string }
+        credentialBoundary: { type: string }
+      required: [name, team, memoryPath, budgetCap]
+    ProjectUpdate:
+      type: object
+      properties:
+        name: { type: string, minLength: 1 }
+        team: { type: string, minLength: 1 }
+        status: { type: string, enum: [active, paused, archived] }
+        memoryPath: { type: string, minLength: 1 }
+        budgetCap: { type: number, minimum: 0 }
+        toolBoundary: { type: string }
+        credentialBoundary: { type: string }
+    WorkforceRole:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        purpose: { type: string }
+        access: { type: string }
+        tools: { type: array, items: { type: string } }
+        blocked: { type: array, items: { type: string } }
+      required: [id, name, purpose, access, tools, blocked]
+    Workforce:
+      type: object
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        status: { type: string, enum: [active, paused] }
+        route: { type: string }
+        budgetCap: { type: number }
+        budgetUsed: { type: number }
+        autoRoute: { type: boolean }
+        checkpointRecovery: { type: boolean }
+        roles: { type: array, items: { $ref: "#/components/schemas/WorkforceRole" } }
+        createdAt: { type: string, format: date-time }
+      required: [id, name, status, route, budgetCap, budgetUsed, autoRoute, checkpointRecovery, roles, createdAt]
+    WorkforceInput:
+      type: object
+      properties:
+        name: { type: string, minLength: 1 }
+        route: { type: string }
+        budgetCap: { type: number, minimum: 0 }
+        autoRoute: { type: boolean }
+        checkpointRecovery: { type: boolean }
+        roles: { type: array, items: { $ref: "#/components/schemas/WorkforceRole" } }
+      required: [name, route, budgetCap]
+    WorkforceUpdate:
+      type: object
+      properties:
+        name: { type: string, minLength: 1 }
+        status: { type: string, enum: [active, paused] }
+        route: { type: string }
+        budgetCap: { type: number, minimum: 0 }
+        autoRoute: { type: boolean }
+        checkpointRecovery: { type: boolean }
+        roles: { type: array, items: { $ref: "#/components/schemas/WorkforceRole" } }
+    Skill:
+      type: object
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        description: { type: string }
+        source: { type: string }
+        trust: { type: string }
+        version: { type: string }
+        updateState: { type: string }
+        compatibility: { type: string }
+        access: { type: string }
+        scope: { type: string }
+        securityNotes: { type: string }
+        installedProjectIds: { type: array, items: { type: integer } }
+      required: [id, name, description, source, trust, version, updateState, compatibility, access, scope, securityNotes, installedProjectIds]
+    SkillInstallInput:
+      type: object
+      properties:
+        projectId: { type: integer, minimum: 1 }
+      required: [projectId]
+    SkillInstallation:
+      type: object
+      properties:
+        id: { type: integer }
+        skillId: { type: integer }
+        projectId: { type: integer }
+        installedAt: { type: string, format: date-time }
+      required: [id, skillId, projectId, installedAt]
+    MemoryConnection:
+      type: object
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        provider: { type: string }
+        status: { type: string, enum: [online, offline] }
+        notesIndexed: { type: integer }
+        linkedClusters: { type: integer }
+        lastIndexedAt: { type: string, format: date-time }
+        readScope: { type: string }
+        writeScope: { type: string }
+        frontmatterPreserved: { type: boolean }
+      required: [id, name, provider, status, notesIndexed, linkedClusters, lastIndexedAt, readScope, writeScope, frontmatterPreserved]
+    MemoryConnectionUpdate:
+      type: object
+      properties:
+        status: { type: string, enum: [online, offline] }
+        reindex: { type: boolean }
+      required: [status]
+    MemoryNote:
+      type: object
+      properties:
+        id: { type: integer }
+        title: { type: string }
+        path: { type: string }
+        excerpt: { type: string }
+        scope: { type: string }
+        provenance: { type: string }
+      required: [id, title, path, excerpt, scope, provenance]
+    MemoryProposal:
+      type: object
+      properties:
+        id: { type: integer }
+        title: { type: string }
+        path: { type: string }
+        change: { type: string }
+        agent: { type: string }
+        runId: { type: integer }
+        project: { type: string }
+        confidence: { type: number }
+        status: { type: string, enum: [pending, approved, rejected] }
+        createdAt: { type: string, format: date-time }
+      required: [id, title, path, change, agent, runId, project, confidence, status, createdAt]
+    MemoryProposalInput:
+      type: object
+      properties:
+        title: { type: string, minLength: 1 }
+        path: { type: string, minLength: 1 }
+        change: { type: string, minLength: 1 }
+        agent: { type: string }
+        runId: { type: integer }
+        project: { type: string }
+        confidence: { type: number, minimum: 0, maximum: 1 }
+      required: [title, path, change, agent, runId, project, confidence]
+    MemoryProposalReview:
+      type: object
+      properties:
+        status: { type: string, enum: [approved, rejected] }
+      required: [status]
+    Run:
+      type: object
+      properties:
+        id: { type: integer }
+        request: { type: string }
+        projectId: { type: integer }
+        projectName: { type: string }
+        status: { type: string, enum: [ready, running, paused, completed, stopped] }
+        budgetCap: { type: number }
+        budgetUsed: { type: number }
+        retryLimit: { type: integer }
+        retriesLeft: { type: integer }
+        gatesPending: { type: integer }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+      required: [id, request, projectId, projectName, status, budgetCap, budgetUsed, retryLimit, retriesLeft, gatesPending, createdAt, updatedAt]
+    RunInput:
+      type: object
+      properties:
+        request: { type: string, minLength: 1 }
+        projectId: { type: integer, minimum: 1 }
+        budgetCap: { type: number, minimum: 0 }
+      required: [request, projectId]
+    RunEvent:
+      type: object
+      properties:
+        id: { type: integer }
+        runId: { type: integer }
+        kind: { type: string }
+        title: { type: string }
+        detail: { type: string }
+        createdAt: { type: string, format: date-time }
+      required: [id, runId, kind, title, detail, createdAt]
+    RunWorker:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        role: { type: string }
+        status: { type: string }
+        detail: { type: string }
+      required: [id, name, role, status, detail]
+    Approval:
+      type: object
+      properties:
+        id: { type: integer }
+        runId: { type: integer }
+        title: { type: string }
+        detail: { type: string }
+        status: { type: string, enum: [pending, approved, denied] }
+        expiresAt: { type: string, format: date-time }
+      required: [id, runId, title, detail, status, expiresAt]
+    ApprovalReview:
+      type: object
+      properties:
+        status: { type: string, enum: [approved, denied] }
+      required: [status]
+    RunArtifact:
+      type: object
+      properties:
+        id: { type: integer }
+        runId: { type: integer }
+        name: { type: string }
+        path: { type: string }
+        status: { type: string }
+        provenance: { type: string }
+      required: [id, runId, name, path, status, provenance]
+    RunDetail:
+      allOf:
+        - $ref: "#/components/schemas/Run"
+        - type: object
+          properties:
+            workers: { type: array, items: { $ref: "#/components/schemas/RunWorker" } }
+            events: { type: array, items: { $ref: "#/components/schemas/RunEvent" } }
+            approvals: { type: array, items: { $ref: "#/components/schemas/Approval" } }
+            artifacts: { type: array, items: { $ref: "#/components/schemas/RunArtifact" } }
+          required: [workers, events, approvals, artifacts]
+    RunStatusUpdate:
+      type: object
+      properties:
+        status: { type: string, enum: [running, paused, stopped] }
+      required: [status]
+    Dashboard:
+      type: object
+      properties:
+        projects: { type: integer }
+        workforces: { type: integer }
+        agents: { type: integer }
+        pendingApprovals: { type: integer }
+        budgetUsed: { type: number }
+        budgetCap: { type: number }
+        activeRuns: { type: integer }
+        pendingApprovalId: { type: ["integer", "null"] }
+        pendingApprovalTitle: { type: ["string", "null"] }
+        pendingApprovalDetail: { type: ["string", "null"] }
+        recentEvents: { type: array, items: { $ref: "#/components/schemas/RunEvent" } }
+      required: [projects, workforces, agents, pendingApprovals, budgetUsed, budgetCap, activeRuns, pendingApprovalId, pendingApprovalTitle, pendingApprovalDetail, recentEvents]
 
